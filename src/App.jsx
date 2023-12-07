@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Home from "./components/pages/Home";
@@ -8,7 +8,7 @@ import Sidebar from "./components/Layouts/Sidebar";
 import Navbar from "./components/Layouts/Navbar";
 import ProjectDetail from "./components/Contents/ProjectDetail";
 import UseDarkSideHook from "./components/Contents/Blog/useDarkSideHook";
-import { MDXProvider } from "@mdx-js/react";
+
 
 
 const App = () => {
@@ -18,9 +18,9 @@ const App = () => {
   useEffect(() => {
     document.title = title;
   }, [title]);
-
+  
   return (
-    <section className="flex gap-10 dark:bg-primary w-full ">
+    <section className="flex gap-10 dark:bg-primary ">
       <div className="mt-5 flex flex-col lg:flex-row gap-10 lg:mt-10 mx-6 lg:mx-40">
         <Router>
           <div>
@@ -32,7 +32,6 @@ const App = () => {
             </div>
           </div>
           <div className="w-full">
-          <MDXProvider>
             <Routes>
               <Route
                 path="/"
@@ -70,7 +69,6 @@ const App = () => {
               <Route path="/project/:slug" element={<ProjectDetail />} />
               <Route path="/blog/react-custom-hooks-useDarkSide" element={<UseDarkSideHook />} />
             </Routes>
-          </MDXProvider> 
           </div>
         </Router>
       </div>
