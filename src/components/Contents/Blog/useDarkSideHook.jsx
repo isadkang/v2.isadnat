@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { marked } from "marked";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import hljs from "highlight.js";
+import "highlight.js/styles/agate.css";
 
 
 const UseDarkSideHook = () => {
-  const usage = `
+
+  useEffect(() => {
+    hljs.highlightAll();
+  });
+
+  const markdown = `
+  \`\`\`javascript
   import React from "react";
   import useDarkSide from "use-dark-side";
   
@@ -20,7 +27,9 @@ const UseDarkSideHook = () => {
         {/* Your component UI here */}
       </div>
     );
-  }`;
+  }
+  \`\`\`
+`;
 
   return (
     <div className="dark:text-white mb-10">
@@ -55,19 +64,18 @@ const UseDarkSideHook = () => {
         </p>
         <h1 className="mt-2 text-xl font-bold">Installation</h1>
         <p>Using NPM: </p>
-        <code className="code language-bash">
-          npm install --save use-dark-side
-        </code>
+        <pre>
+          <code className="language-bash">
+            npm install --save use-dark-side
+          </code>
+        </pre>
         <p>Using Yarn: </p>
-        <code className="code language-bash">yarn add use-dark-side</code>
+        <pre>
+          <code className="language-bash">yarn add use-dark-side</code>
+        </pre>
         <h1 className="mt-2 text-xl font-bold">Usage</h1>
         <p>Import the hook in your React component: </p>
-        <div className="mt-2 flex flex-col">
-        <SyntaxHighlighter language="javascript" style={docco}>
-      {usage}
-    </SyntaxHighlighter>
-
-        </div>
+        <div className="w-[450px] md:w-[720px] lg:w-full mt-2 " dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
       </div>
     </div>
   );
