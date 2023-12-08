@@ -65,13 +65,13 @@ const UseDarkSideHook = () => {
         <h1 className="mt-2 text-xl font-bold">Installation</h1>
         <p>Using NPM: </p>
         <pre>
-          <code className="language-bash">
+          <code className="language-bash w-[450px]   md:w-[720px] lg:w-full">
             npm install --save use-dark-side
           </code>
         </pre>
         <p>Using Yarn: </p>
         <pre>
-          <code className="language-bash">yarn add use-dark-side</code>
+          <code className="language-bash w-[450px]  md:w-[720px] lg:w-full">yarn add use-dark-side</code>
         </pre>
         <h1 className="mt-2 text-xl font-bold">Usage</h1>
         <p>Import the hook in your React component: </p>
