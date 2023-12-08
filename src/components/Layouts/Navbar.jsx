@@ -8,6 +8,8 @@ import Switcher from "../utils/Switcher";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavLink from "../Fragments/NavLink";
 import { Link } from "react-router-dom";
+import { TbRouteSquare2 } from "react-icons/tb";
+import { PiCertificate } from "react-icons/pi";
 
 const Navbar = () => {
 
@@ -45,6 +47,9 @@ const Navbar = () => {
         <NavLink to="/" title="Home" icon={RiHome3Line} />
         <NavLink to="/project" title="Projects" icon={HiOutlineInboxStack} />
         <NavLink to="/blog" title="Blog" icon={LuPencilLine} />
+        <NavLink to="/roadmap" title="Roadmap" icon={TbRouteSquare2} />
+        <NavLink to="/certificate" title="Certificate" icon={PiCertificate} />
+
       </div>
     </div>
   );

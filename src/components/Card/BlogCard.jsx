@@ -6,8 +6,8 @@ const BlogCard = () => {
     <div className="max-w-sm rounded-xl overflow-hidden shadow-md mt-2">
       <Link to={'/blog/react-custom-hooks-useDarkSide'}>
         <img
-          src="/img/comingsoon.jpg"
-          alt="comingsoon"
+          src="/img/blog-1-banner.webp"
+          alt="use-dark-side"
           className="w-full scale-100 hover:scale-95 transition duration-500"
         />
       </Link>

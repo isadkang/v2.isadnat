@@ -6,6 +6,8 @@ import Blog from "./components/pages/Blog/Blog";
 import Project from "./components/pages/Project/Project";
 import Sidebar from "./components/Layouts/Sidebar";
 import Navbar from "./components/Layouts/Navbar";
+import Certificate from "./components/pages/Certificates/Certificate";
+import Roadmap from "./components/pages/Roadmap/Roadmap";
 import ProjectDetail from "./components/Contents/ProjectDetail";
 import UseDarkSideHook from "./components/Contents/Blog/useDarkSideHook";
 
@@ -63,6 +65,28 @@ const App = () => {
                       <title>{`Irsyad Nata | Blog`}</title>
                     </Helmet>
                     <Blog />
+                  </>
+                }
+              />
+              <Route
+                path="/roadmap"
+                element={
+                  <>
+                    <Helmet>
+                      <title>{`Irsyad Nata | Roadmap`}</title>
+                    </Helmet>
+                    <Roadmap />
+                  </>
+                }
+              />
+              <Route
+                path="/certificate"
+                element={
+                  <>
+                    <Helmet>
+                      <title>{`Irsyad Nata | Certificate`}</title>
+                    </Helmet>
+                    <Certificate />
                   </>
                 }
               />

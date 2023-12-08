@@ -6,6 +6,7 @@ import { RiHome3Line } from "react-icons/ri";
 import { LuPencilLine } from "react-icons/lu";
 import { HiOutlineInboxStack } from "react-icons/hi2";
 import { TbRouteSquare2 } from "react-icons/tb";
+import { PiCertificate } from "react-icons/pi";
 
 const Sidebar = () => {
   return (
@@ -29,6 +30,7 @@ const Sidebar = () => {
         <NavLink to="/project" title="Projects" icon={HiOutlineInboxStack} />
         <NavLink to="/blog" title="Blog" icon={LuPencilLine} />
         <NavLink to="/roadmap" title="Roadmap" icon={TbRouteSquare2} />
+        <NavLink to="/certificate" title="Certificate" icon={PiCertificate} />
        </div>
     </div>
   );
