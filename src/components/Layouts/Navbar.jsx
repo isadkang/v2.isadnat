@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center gap-4">
           <img
-            src="/img/sidebar-img.jpg"
+            src="/img/profile.png"
             alt="bg"
             width={50}
             className="shadow rounded-full align-middle border-none duration-700 ease-in-out scale-100 blur-0 grayscale-0 hover:scale-105"
