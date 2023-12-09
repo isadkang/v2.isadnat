@@ -23,17 +23,17 @@ const App = () => {
   
   return (
     <section className="flex gap-10 dark:bg-primary ">
-      <div className="mt-5 flex flex-col lg:flex-row gap-10 lg:mt-10 mx-6 lg:mx-40">
+      <div className="mt-5 flex flex-col lg:flex-row gap-10 lg:mt-10 mx-6 md:mx-20 lg:mx-40 max-w-full">
         <Router>
-          <div>
-            <div className="hidden lg:block sticky top-10">
+          <div >
+            <div className="hidden lg:block md:hidden sticky top-10">
               <Sidebar />
             </div>
-            <div className="block lg:hidden">
+            <div className="block lg:hidden md:block">
               <Navbar />
             </div>
           </div>
-          <div className="w-full">
+          <div className="max-w-full ">
             <Routes>
               <Route
                 path="/"
