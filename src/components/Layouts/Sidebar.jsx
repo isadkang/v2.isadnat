@@ -14,7 +14,7 @@ const Sidebar = () => {
       <img src="/img/mario-wall.jpg" className="w-full h-24 rounded-lg" alt="" />
       <div className="flex flex-col justify-center items-center border-b border-gray-600">
         <img
-          src="/img/sidebar-img.jpg"
+          src="/img/profile.png"
           alt="bg"
           width={100}
           className="shadow rounded-full align-middle border-none absolute top-10 duration-700 ease-in-out scale-100 blur-0 grayscale-0 hover:scale-105"
