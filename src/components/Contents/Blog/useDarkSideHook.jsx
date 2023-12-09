@@ -32,7 +32,7 @@ const UseDarkSideHook = () => {
 `;
 
   return (
-    <div className="dark:text-white mb-10">
+    <div className="dark:text-white mb-10 max-w-full">
       <Link
         to={"/blog"}
         className="scale-100 hover:scale-105 transition duration-300 font-semibold inline-flex items-center gap-2 mb-3"
@@ -40,7 +40,7 @@ const UseDarkSideHook = () => {
         <FaRegArrowAltCircleLeft />
         <h1>Back</h1>
       </Link>
-      <div className="mt-2">
+      <div className="mt-2 max-w-full">
         <div className="border-b flex flex-col lg:flex-row">
           <div className="mb-3">
             <h1 className="text-3xl font-bold mb-5">
@@ -65,17 +65,17 @@ const UseDarkSideHook = () => {
         <h1 className="mt-2 text-xl font-bold">Installation</h1>
         <p>Using NPM: </p>
         <pre>
-          <code className="language-bash w-[450px]   md:w-[720px] lg:w-full">
+          <code className="  md:w-[720px] lg:w-full">
             npm install --save use-dark-side
           </code>
         </pre>
         <p>Using Yarn: </p>
         <pre>
-          <code className="language-bash w-[450px]  md:w-[720px] lg:w-full">yarn add use-dark-side</code>
+          <code className="  md:w-[720px] lg:w-full">yarn add use-dark-side</code>
         </pre>
         <h1 className="mt-2 text-xl font-bold">Usage</h1>
         <p>Import the hook in your React component: </p>
-        <div className="w-[450px] md:w-[720px] lg:w-full mt-2 " dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
+        <div className=" mt-2 max-w-full" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
       </div>
     </div>
   );
