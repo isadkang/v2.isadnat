@@ -40,7 +40,7 @@ const App = () => {
                 element={
                   <>
                     <Helmet>
-                      <title>{`${defaultTitle} Personal Website`}</title>
+                      <title>{`${defaultTitle}`}</title>
                     </Helmet>
                     <Home />
                   </>

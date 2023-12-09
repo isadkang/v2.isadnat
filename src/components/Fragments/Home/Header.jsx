@@ -1,13 +1,22 @@
 import React from "react";
 import { FaDonate } from "react-icons/fa";
 
+const Emote = ({ isShow }) => {
+  if (!isShow) {
+    return null;
+  }
+
+  return (
+    <p className=" animate-spinner">💫</p>
+  )
+}
 const Donate = ({ isShow }) => {
   if (!isShow) {
     return null;
   }
 
   return (
-    <a href="https://saweria.co/Isadnat" target="_blank"><FaDonate size={25} /></a>
+    <a href="https://saweria.co/isadnat" target="_blank"><FaDonate size={25} /></a>
   )
 }
 const List = ({ text, isShow }) => {
@@ -25,7 +34,10 @@ const Header = ({ title, description, showList, showDonate }) => {
   return (
     <div className="mb-5">
       <div className="text-3xl font-bold mb-2 flex justify-between items-center">
-        <h1>{title}</h1>
+        <div className="flex gap-2">
+          <h1>{title}</h1>
+          <Emote isShow={showList} />
+        </div>
         <Donate isShow={showDonate} />
       </div>
       {showList && (

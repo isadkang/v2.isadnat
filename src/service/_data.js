@@ -1,7 +1,7 @@
 
 const homeData = {
     title: "Hi, I'm Irsyad",
-    description: "Have a strong motivation to become a Fullstack Developer. Currently exploring Frontend more broadly. I am ready to explore coding technology more widely. Proficient in Javascript and well-versed in all aspects of web technologies. Collaborative team player dedicated to delivering efficient, scalable, and visually appealing web applications.",
+    description: "Have a strong motivation to become a Fullstack Developer. Currently exploring Frontend more broadly. I am ready to explore coding technology more widely. Proficient in Javascript and well in some aspects of web technologies. Collaborative team player dedicated to delivering efficient, scalable, and visually appealing web applications.",
 };
 
 const article = {
@@ -11,7 +11,7 @@ const article = {
 
 const blog = {
     title: "Blog",
-    description: "Welcome to this blog! Here, you'll discover a diverse range of articles covering interesting, informative, and inspiring topics. From book reviews to practical guides, this blog is designed to provide fresh insights and in-depth perspectives. Join us in exploring and uncovering intriguing things you might not have known before. Happy reading!",
+    description: "Welcome to this blog! Here, you'll discover a diverse range of articles covering interesting, informative, and inspiring topics. Join us in exploring and uncovering intriguing things you might not have known before. Happy reading!",
 };
 
 const project = {
