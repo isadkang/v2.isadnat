@@ -22,6 +22,10 @@ const roadmap = [
         icon: 'skill-icons:bootstrap',
     },
     {
+        title: 'Tailwind Css',
+        icon: 'devicon:tailwindcss',
+    },
+    {
         title: 'Javascript Basic ( Tipe Data, Variable, Operator, Loop, Array, Object, Function )',
         icon: 'skill-icons:javascript',
     },
