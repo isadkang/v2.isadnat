@@ -7,7 +7,7 @@ const Donate = ({ isShow }) => {
   }
 
   return (
-    <a href="https://saweria.co/Isadnat" target="_blank"><FaDonate size={25} /></a>
+    <a href="https://saweria.co/isadnat" target="_blank"><FaDonate size={25} /></a>
   )
 }
 const List = ({ text, isShow }) => {
