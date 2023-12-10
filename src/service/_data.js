@@ -104,6 +104,28 @@ const projectData = [
         project_link: 'https://github.com/isadkang/boxshadow-generator',
 
     },
+    {
+        slug: 'masjid-wikrama',
+        image: '/project/masjid.png',
+        title: 'Masjid Wikrama',
+        description: 'This project is for education purpose using React Tailwind and MYSQL.',
+        icons: ['skill-icons:react-light', 'skill-icons:tailwindcss-light', 'skill-icons:mysql-light'],
+        isLive: false,
+        isPrivate: false,
+        project_link: 'https://github.com/isadkang/masjid-wikrama   ',
+
+    },
+    {
+        slug: 'simple-shop',
+        image: '/project/shop.png',
+        title: 'Simple Shop Website',
+        description: 'This project is for education purpose using HTML CSS and JS.',
+        icons: ['skill-icons:html', 'skill-icons:css', 'skill-icons:javascript'],
+        isLive: false,
+        isPrivate: false,
+        project_link: 'https://github.com/isadkang/simple-shop ',
+
+    },
 ]
 
 
