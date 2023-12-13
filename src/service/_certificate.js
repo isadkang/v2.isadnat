@@ -50,6 +50,9 @@ const certificate = [
     {
         image: '/certificates/c17.webp',
     },
+    {
+        image: '/certificates/c18.webp'
+    }
     
 ]
 
