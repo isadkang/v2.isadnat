@@ -52,8 +52,14 @@ const certificate = [
     },
     {
         image: '/certificates/c18.webp'
-    }
-    
+    },
+    {
+        image: '/certificates/c19.webp'
+    },
+    {
+        image: '/certificates/c20.webp'
+    },
+
 ]
 
 export default certificate;
