@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Header from "../../Fragments/Home/Header";
 import roadmap from "../../../service/_roadmap";
@@ -15,7 +16,7 @@ const Roadmap = () => {
                 <Link to={''} className={'rounded-full py-1 px-4 border border-dashed font-medium'}>Self-roadmap</Link>
             </div>
             {roadmap.map((item, index) => (
-                <div key={index} className="py-3 border rounded-lg hover:shadow dark:hover:shadow-white hover:scale-100 hover:border transition duration-300 mb-5">
+                <div key={index} className="py-3 border rounded-lg hover:shadow dark:hover:shadow-white hover:scale-100 hover:border transition duration-300 mb-5 hover:cursor-pointer">
                     <div className="flex gap-5 mx-2">
                         <Icon icon={item.icon} fontSize={23}></Icon>
                         <p className="font-semibold">{item.title}</p>
